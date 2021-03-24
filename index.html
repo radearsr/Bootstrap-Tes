@@ -5,113 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <title>Latihan Bootstrap</title>
+    <title>Main Page</title>
   </head>
   <body>
+    <!-- Main Content Card -->
     <div class="container-md">
       <div class="row justify-content-center">
-        <!-- Main Card -->
-        <div class="col-md-7">
-          <div class="shadow mt-4 mb-4 card">
-            <!-- Card Header -->
-            <div class="card-header bg-primary bg-gradient text-white">
-              <h1 class="text-center">Lorem ipsum dolor sit amet.</h1>
-            </div>
-            <!-- Akhir Card Header -->
+        <div class="col-md-8">
+          <div class="mt-5 card border-dark">
+            <h1 class="card-title text-center">Main Header</h1>
+            <!-- Body Main Content Card -->
+            <div class="md-card-body">
+              <!-- Child Card -->
+              <div class="mt-5 container-md">
+                <div class="row justify-content-around">
+                  <!-- Child Card Content Left -->
+                  <div class="mb-4 col-md-6">
+                    <div class="shadow card border-primary mb-3">
+                      <div class="card-header bg-primary">Child Header1</div>
+                      <div class="mt-3 card-body">
+                        <div class="d-grid gap-3">
+                          <button class="rounded-pill btn btn-outline-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#myModal1">Button1</button>
+                          <button class="rounded-pill btn btn-outline-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#myModal1">Button1</button>
+                          <button class="rounded-pill btn btn-outline-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#myModal1">Button1</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Akhir Child Card Content Left -->
 
-            <!-- Card Body -->
-            <div class="card-body">
-              <!-- First Input -->
-              <div class="mt-3 mb-4 row justify-content-center">
-                <label for="nama_lengkap" class="col-sm-3 col-form-label fw-bold">Nama Lengkap</label>
-                <div class="col-sm-8">
-                  <input type="text" class="p-2 form-control" id="nama_lengkap" />
+                  <!-- Child Card Contents Right -->
+                  <div class="mb-4 col-md-6">
+                    <div class="shadow card border-info mb-3">
+                      <div class="card-header bg-info">Child Header2</div>
+                      <div class="mt-3 card-body">
+                        <div class="d-grid gap-3">
+                          <button class="rounded-pill btn btn-outline-info btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#myModal2">Button2</button>
+                          <button class="rounded-pill btn btn-outline-info btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#myModal2">Button2</button>
+                          <button class="rounded-pill btn btn-outline-info btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#myModal2">Button2</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Akhir Child Card Contents Right -->
                 </div>
-              </div>
-
-              <!-- Second Input -->
-              <div class="mb-4 row justify-content-center">
-                <label for="nomer" class="col-sm-3 col-form-label fw-bold">NIT</label>
-                <div class="col-sm-8">
-                  <input type="text" class="p-2 form-control" id="nomer" />
-                </div>
-              </div>
-
-              <!-- Third Input -->
-              <div class="mb-4 row justify-content-center">
-                <label for="nama_kelas" class="col-sm-3 col-form-label fw-bold">Kelas</label>
-                <div class="col-sm-8">
-                  <select class="form-select" id="inputGroupSelect01">
-                    <option disabled selected>Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-              </div>
-
-              <!-- Fourth Input -->
-              <div class="mb-4 row justify-content-center">
-                <label for="pagi" class="col-sm-3 col-form-label fw-bold">Foto Absen Pagi</label>
-                <div class="col-sm-8">
-                  <input type="file" class="p-2 form-control" id="pagi" />
-                </div>
-              </div>
-
-              <!-- Fifth Input -->
-              <div class="mb-4 row justify-content-center">
-                <label for="siang" class="col-sm-3 col-form-label fw-bold">Foto Absen Siang</label>
-                <div class="col-sm-8">
-                  <input type="file" class="p-2 form-control" id="siang" />
-                </div>
-              </div>
-
-              <!-- Sixth Input -->
-              <div class="mb-4 row justify-content-center">
-                <label for="sore" class="col-sm-3 col-form-label fw-bold">Foto Absen Sore</label>
-                <div class="col-sm-8">
-                  <input type="file" class="p-2 form-control" id="sore" />
-                </div>
-              </div>
-
-              <!-- Seventh Input -->
-              <div class="mb-4 row justify-content-center">
-                <label for="berat_badan" class="col-sm-3 col-form-label fw-bold">Berat Badan(KG)</label>
-                <div class="col-sm-8">
-                  <input type="text" class="p-2 form-control" id="berat_badan" />
-                </div>
-              </div>
-
-              <!-- Eighth Input -->
-              <div class="mb-4 row justify-content-center">
-                <label for="foto_full" class="col-sm-3 col-form-label fw-bold">Foto Full Badan</label>
-                <div class="col-sm-8">
-                  <input type="file" class="p-2 form-control" id="foto_full" />
-                </div>
-              </div>
-
-              <!-- ninth Input -->
-              <div class="mb-4 row justify-content-center">
-                <label for="ket" class="col-sm-3 col-form-label fw-bold">Keterangan</label>
-                <div class="col-sm-8">
-                  <select class="form-select" id="inputGroupSelect01">
-                    <option disabled selected>Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-              </div>
-              <div class="mt-5 d-grid gap-3 col-md-5 mx-auto">
-                <button class="p-2 rounded-3 btn btn-primary" type="submit">Button</button>
-                <a class="p-2 rounded-pill btn btn-outline-danger" href="https://github.com/radearsr" type="button">Button</a>
+                <!-- Akhir Child Card -->
               </div>
             </div>
-            <!-- Akhir Card Body -->
+            <!-- Body Main Content Card -->
+
+            <!-- Footer Main Content Card -->
+            <div class="card-footer border-dark">
+              <h5 class="text-center">Created by RADEARSR</h5>
+            </div>
+            <!-- Akhir Footer Main Content Card -->
           </div>
         </div>
-        <!-- Akhir Main Card -->
       </div>
     </div>
+    <!-- Akhir Main Content Card -->
+
+    <!-- PopUp Header1 -->
+    <div class="modal" id="myModal1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal Title</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <a class="p-2 rounded-3 btn btn-primary" type="button" href="main-page.html">Button Redirect</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir PopUp Header1 -->
+
+    <!-- PopUp Header2 -->
+    <div class="modal" id="myModal2">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal Title</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <a class="p-2 rounded-3 btn btn-primary" type="button" href="main-page.html">Button Redirect</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir PopUp Header2 -->
   </body>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </html>
